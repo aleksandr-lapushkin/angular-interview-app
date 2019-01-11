@@ -1,0 +1,12 @@
+.orders-list {
+    border-collapse: collapse;
+}
+
+.order-row {
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.order-row:hover {
+  background: #eee;
+}

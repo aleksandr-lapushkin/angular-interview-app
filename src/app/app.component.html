@@ -1,0 +1,22 @@
+<div className="container u-full-width">
+	<div className="row">
+		<div className="columns twelve centered">
+			<h1>
+				Orders
+			</h1>
+		</div>
+	</div>
+	<div className="row">
+		<div className="columns twelve centered">
+			<button (click)="fetchAllOrders()">Refresh</button>
+		</div>
+	</div>
+	<div className="row">
+		<div className="column twelve">
+			<orders-list class="u-full-width" [orders]="orders" *ngIf="loaded">
+			</orders-list>
+			<loader *ngIf="!loaded"></loader>
+		</div>
+	</div>
+
+</div>
