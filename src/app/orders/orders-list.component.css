@@ -1,10 +1,14 @@
 .orders-list {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .order-row {
   transition-duration: 300ms;
   cursor: pointer;
+}
+
+td {
+  padding: 8px;
 }
 
 .order-row:hover {
