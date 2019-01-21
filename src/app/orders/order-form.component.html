@@ -1,0 +1,16 @@
+<div className="row">
+	<div className="columns twelve centered">
+		<button routerLink="/orders">Home</button>
+		<button>Save</button>
+	</div>
+</div>
+<div>
+    <form>
+        <input placeholder="Order Title" type="text"/>
+        <select>
+            <option *ngFor="let status of statuses">
+                {{status}}
+            </option>
+        </select>
+    </form>
+</div>
