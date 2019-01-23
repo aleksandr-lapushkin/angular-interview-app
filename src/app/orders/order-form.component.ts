@@ -10,5 +10,9 @@ import OrderStatus from "./order-status";
 export class OrderFormComponent {
   constructor() {}
   ngOnInit() {}
+  saveOrder() {
+    //TODO: implement
+    console.log("Saving order");
+  }
   statuses = Object.keys(OrderStatus);
 }

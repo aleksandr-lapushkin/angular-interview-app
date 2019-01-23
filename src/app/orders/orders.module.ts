@@ -5,12 +5,13 @@ import { LoaderModule } from "../loader/loader.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { OrdersService } from "./orders.service";
 import { NgModule } from "@angular/core";
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [{ path: "orders/new", component: OrderFormComponent }];
 
 @NgModule({
   declarations: [OrdersListComponent, OrderFormComponent],
-  imports: [RouterModule.forChild(routes), LoaderModule, BrowserModule],
+  imports: [RouterModule.forChild(routes), LoaderModule, BrowserModule, FormsModule],
   providers: [OrdersService],
   bootstrap: [],
   exports: [OrdersListComponent, OrderFormComponent]

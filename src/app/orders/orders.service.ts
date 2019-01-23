@@ -7,6 +7,9 @@ import { Order } from "./order";
 export class OrdersService {
   constructor(private http: HttpClient) {}
   public fetchAll() {
-    return this.http.get("https://9b923f7e.ngrok.io/orders");
+    return this.http.get("https://c098da06.ngrok.io/orders");
+  }
+  public saveOrder() {
+    //TODO: implement and test
   }
 }
